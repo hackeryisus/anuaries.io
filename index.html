@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <head>
   <title>Anuarios.io</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
   <meta name="twitter:" content="">
   <meta charset="utf-8">
   <link rel="stylesheet" href="/style.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/javascript">
+    document.addEventListener( "DOMContentLoaded", function(){
+      var btnMenu = document.getElementById('btnMenu');
+      var navbarMenu = document.getElementById('navbarMenu');
+
+      btnMenu.addEventListener('click', onClickMenu);
+
+      function onClickMenu() {
+          navbarMenu.classList.toggle('header-menu-list--show');
+      }
+    });
+  </script>
 </head>
 <body>
-  <div id="container">
-    <a href=""></a>
-    <section id="header">
-      <figure id="header-logo">
-        <img src="http://myfonts-wtf.s3.amazonaws.com/2b/2bbce27969a1174e198ade4a6cc34bf1.63917.png" alt="CONVERSE">
-      </figure>
-      <a href="">Inicio</a>
-      <a href=""></a>
-    </section>
-    <section id="body">
+  <header class="header">
+    <div class="header-mobile">
+      <figure class="header-logo"><img src="./img/converse.png" alt="CONVERSE"></figure>
+      <button id="btnMenu" class="header-btn-nav">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
 
-    </section>
-    <section id="footer">
+    <nav class="header-menu-navbar">
+      <ul id="navbarMenu" class="header-menu-list">
+        <li class="header-menu-list-item">
+          <a href="#">Inicio</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+</header>
 
-    </section>
+
+  <section id="body">
+    <div class="anuarios">
+      <figure class="anuarios-img"><img src="./img/3.jpg" alt=""></figure>
+      <figure class="anuarios-img"><img src="./img/ejemplo2.jpg" alt=""></figure>
+      <figure class="anuarios-img"><img src="./img/ejemplo2.jpg" alt=""></figure>
+    </div>
+  </section>
+  <div id="footer">
+    <p>Creado con por @jemandez</p>
   </div>
 </body>

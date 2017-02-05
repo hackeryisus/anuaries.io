@@ -43,6 +43,8 @@ gulp.task('build:css', function(){
     browsers: ['last 2 versions'],
     cascade: false
   }))
+  .pipe(rename('style.css'))
+  .pipe(gulp.dest(config.styles.output))
   .pipe(nano({
     discardComments: {removeAll: true}
   }))

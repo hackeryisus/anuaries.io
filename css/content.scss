@@ -1,16 +1,24 @@
-/*.anuarios{
+.anuarios{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  &-img img{
-    background-color: red;
-    width: 500px;
-
+  p{
+    color: $gray;
+    font-weight:  lighter;
+  }
+  div {
+    margin-bottom: 1em;
   }
 }
-*/
+
 
 body > .container{
-  padding-top: 60px;
+  padding-top: 70px;
+}
+body > .jumbotron {
+  padding-top: 80px;
+}
+.cheesy-green{
+  background-color: $lightgreen;
 }

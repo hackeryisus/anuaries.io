@@ -5734,20 +5734,29 @@ button.close {
 #header-logo img {
   height: 4em; }
 
-/*.anuarios{
+.anuarios {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  flex-wrap: wrap;
-  &-img img{
-    background-color: red;
-    width: 500px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .anuarios p {
+    color: #737d86;
+    font-weight: lighter; }
+  .anuarios div {
+    margin-bottom: 1em; }
 
-  }
-}
-*/
 body > .container {
-  padding-top: 60px; }
+  padding-top: 70px; }
+
+body > .jumbotron {
+  padding-top: 80px; }
+
+.cheesy-green {
+  background-color: #ecf6e9; }
 
 /*#footer {
 	font-family: $font-family-sans-serif;
